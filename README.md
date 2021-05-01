@@ -1,6 +1,11 @@
 # Trabajando con datos COVID19 en Sonora
-## Requisitos
-## Instalación
+
+## Requisitos previos  
+- Docker
+- Git
+
+## Instalación  
+
 1. Descargar el repositorio  
    ```git clone https://github.com/danielmc81/mcd.git```
 2. Crear la imagen docker  

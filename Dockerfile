@@ -12,13 +12,10 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 
 RUN eval "$(/root/miniconda3/bin/conda shell.bash hook)"
 RUN /root/miniconda3/bin/conda init
-RUN /root/miniconda3/bin/conda install -c conda-forge notebook 
+RUN /root/miniconda3/bin/conda install -c conda-forge notebook voila
 
 ADD descargar_datos.sh /
 ADD catalogos.xlsx /
 ADD AGEEML_2021521630391.csv /
 
-ADD ENTRYPOINT ["/descargar_datos.sh"]
-
-    
-
+ENTRYPOINT ["/descargar_datos.sh"]

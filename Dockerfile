@@ -15,7 +15,10 @@ RUN /root/miniconda3/bin/conda init
 RUN /root/miniconda3/bin/conda install -c conda-forge notebook 
 
 ADD descargar_datos.sh /
-ENTRYPOINT ["/descargar_datos.sh"]
+ADD catalogos.xlsx /
+ADD AGEEML_2021521630391.csv /
+
+ADD ENTRYPOINT ["/descargar_datos.sh"]
 
     
 

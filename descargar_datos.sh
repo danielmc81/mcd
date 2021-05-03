@@ -24,7 +24,7 @@ rm -f datos_abiertos_covid19.zip
 
 #No especificamos el nombre del archivo por si cambia, en su lugar tomamos de referencia
 #la Fecha de actualizacion de los datos
-csvcut -c 1,8,9,13,23,30,27 *.csv | csvgrep --columns ENTIDAD_RES --match "26" > municipios_sonora.csv
+csvcut -c 1,8,9,13,23,30,27 *COVID19MEXICO.csv | csvgrep --columns ENTIDAD_RES --match "26" > municipios_sonora.csv
 
 #Obtener latitud y longitud de los municipios de Sonora
 #Datos Obtenidos de INEGI 
@@ -41,4 +41,4 @@ csvcut -c 3,6,8,12,13 AGEEML_2021521630391.csv | csvgrep -c "Nom_Ent" -m "Sonora
 csvcut -c Nom_Mun inegi_sonora_lat_lon.csv  | uniq | sed '1d' > nombre_municipios_sonora.dat
 
 #Lanzar la aplicacion
-voila mapa-covid19-sonora.ipynb
+#voila mapa-covid19-sonora.ipynb

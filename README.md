@@ -17,8 +17,8 @@ Los datos COVID19 son obtenidos directo de la secretaria de salud y los datos ge
    ```docker build -t mcd/covid19 .```
 3. Inicializar un contenedor interactivo (-it)con base en la imagen que acabamos de crear. 
    Redirigimos el puerto 8888 (-p) a localhost
-   Al finalizar se destruye (--rm) el contenedor
+   Al finalizar se destruye (--rm) el contenedor  
    ```docker run --rm -it -p 8866:8866 mcd/covid19```  
-4. Abrir un explorador a la siguiente direccion
+4. Abrir un explorador a la siguiente direccion  
    ```localhost:8866```
 

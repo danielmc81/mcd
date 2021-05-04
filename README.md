@@ -19,6 +19,6 @@ Los datos COVID19 son obtenidos directo de la secretaria de salud y los datos ge
    Redirigimos el puerto 8888 (-p) a localhost
    Al finalizar se destruye (--rm) el contenedor  
    ```docker run --rm -it -p 8866:8866 mcd/covid19```  
-4. Abrir un explorador a la siguiente direccion  
+4. Abrir un explorador en la siguiente dirección  
    ```localhost:8866```
 

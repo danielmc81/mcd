@@ -1,6 +1,10 @@
 # Mapa de casos COVID19 en Sonora a la fecha
 ![](imagenes/mapa-covid.png)
 
+### Este trabajo consiste en generar un "HeatMap" con el número de defunciones por municipio del estado de Sonora  
+### Los datos COVID19 son obtenidos directo de la secretaria de salud 
+### Los datos geográficos de los municipio son obtenidos directo de INEGI
+
 ## Requisitos previos  
 - Docker
 - Git

@@ -1,4 +1,4 @@
-# Mapa de defunciones por COVID19 en municipios Sonora
+# Mapa de defunciones por COVID19 en municipios de Sonora
 ![](imagenes/mapa-covid.png)
 
 Este trabajo consiste en generar un "HeatMap" con el número de defunciones por municipio del estado de Sonora. 

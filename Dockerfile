@@ -12,10 +12,12 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 
 RUN eval "$(/root/miniconda3/bin/conda shell.bash hook)"
 RUN /root/miniconda3/bin/conda init
-RUN /root/miniconda3/bin/conda install -c conda-forge notebook voila
+RUN /root/miniconda3/bin/conda install -c conda-forge notebook voila ipyleaflet numpy pandas --yes
+RUN /root/miniconda3/bin/conda install -c conda-forge unidecode openpyxl --yes
 
 ADD descargar_datos.sh /
 ADD catalogos.xlsx /
 ADD AGEEML_2021521630391.csv /
+ADD mapa-covid19-sonora.ipynb
 
 ENTRYPOINT ["/descargar_datos.sh"]

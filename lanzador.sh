@@ -41,5 +41,5 @@ csvcut -c 3,6,8,12,13 AGEEML_2021521630391.csv | csvgrep -c "Nom_Ent" -m "Sonora
 csvcut -c Nom_Mun inegi_sonora_lat_lon.csv  | uniq | sed '1d' > nombre_municipios_sonora.dat
 
 #Lanzar la aplicacion
-jupyter noteoobk --no-browser --ip 0.0.0.0 mapa-covid19-sonora.ipynb
-#voila mapa-covid19-sonora.ipynb
+/root/miniconda3/bin/voila --no-browser --Voila.ip='0.0.0.0' mapa-covid19-sonora.ipynb
+

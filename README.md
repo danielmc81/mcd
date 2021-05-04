@@ -1,5 +1,5 @@
 # Mapa de casos COVID19 en Sonora a la fecha
-![](imagenes/mapa-covid.jpg)
+![](imagenes/mapa-covid.png)
 
 ## Requisitos previos  
 - Docker

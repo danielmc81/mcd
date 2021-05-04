@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Descargar los ultimos datos publicados por ls Secreataria de Salud Publica
-wget --progress=bar:force http://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip 
+wget --progress=bar:force http://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 
 #Descomprimir los datos en una nueva carpeta llamada datos_salud y eliminar el archivo zip
 mkdir datos_salud
@@ -24,7 +24,7 @@ rm -f datos_abiertos_covid19.zip
 
 #No especificamos el nombre del archivo por si cambia, en su lugar tomamos de referencia
 #la Fecha de actualizacion de los datos
-csvcut -c 1,8,9,13,23,30,27 *COVID19MEXICO.csv | csvgrep --columns ENTIDAD_RES --match "26" > municipios_sonora.csv
+csvcut -c 1,8,9,13,23,30,27 datos_salud/*COVID19MEXICO.csv | csvgrep --columns ENTIDAD_RES --match "26" > municipios_sonora.csv
 
 #Obtener latitud y longitud de los municipios de Sonora
 #Datos Obtenidos de INEGI 

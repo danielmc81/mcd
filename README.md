@@ -3,7 +3,7 @@
 
 Este trabajo consiste en generar un "HeatMap" con el número de defunciones por municipio del estado de Sonora. 
 
-Los datos COVID19 son obtenidos directo de la secretaria de salud y los datos geográficos de los municipio son obtenidos directo de INEGI
+Los datos COVID19 son obtenidos directo de la secretaria de salud y los datos geográficos de los municipios son obtenidos directo de INEGI
 
 ## Requisitos previos  
 - Docker

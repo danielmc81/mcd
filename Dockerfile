@@ -20,4 +20,4 @@ ADD catalogos.xlsx /
 ADD AGEEML_2021521630391.csv /
 ADD mapa-covid19-sonora.ipynb
 
-ENTRYPOINT ["/descargar_datos.sh"]
+ENTRYPOINT ["/lanzador.sh"]

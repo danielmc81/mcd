@@ -15,7 +15,7 @@ RUN /root/miniconda3/bin/conda init
 RUN /root/miniconda3/bin/conda install -c conda-forge notebook voila ipyleaflet numpy pandas --yes
 RUN /root/miniconda3/bin/conda install -c conda-forge unidecode openpyxl --yes
 
-ADD descargar_datos.sh /
+ADD lanzador.sh /
 ADD catalogos.xlsx /
 ADD AGEEML_2021521630391.csv /
 ADD mapa-covid19-sonora.ipynb /
